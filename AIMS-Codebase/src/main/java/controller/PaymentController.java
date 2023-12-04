@@ -21,6 +21,7 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
+// Cohesion level: Functional
 public class PaymentController extends BaseController {
 
 	/**

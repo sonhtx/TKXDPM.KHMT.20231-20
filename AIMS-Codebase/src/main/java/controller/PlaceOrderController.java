@@ -16,6 +16,7 @@ import entity.order.OrderMedia;
  * This class controls the flow of place order usecase in our AIMS project
  * @author nguyenlm
  */
+// Cohesion level: Functional
 public class PlaceOrderController extends BaseController{
 
     /**
