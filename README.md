@@ -1,3 +1,5 @@
+# TKXDPM.KHMT.20231-20
+TKXDPM Capstone Project - AIMS
 #  An Internet Media Store
 <p align="center">
   <img src="assets/images/aims_cover_image.png" />
@@ -44,3 +46,5 @@ Click on `Run` -> `Run Configurations...`  -> `Java Application`, create a new l
 - nguyenlm - Software Engeneering Student - k61
 - manhvd   - Software Engeneering Student - k61
 - hieudm   - ICT - k61
+=======
+
