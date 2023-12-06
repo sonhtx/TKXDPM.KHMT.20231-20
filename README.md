@@ -47,17 +47,14 @@
 </details>
 
 <details>
-<summary>Team Member 3</summary>
+<summary>Ngo Duc Thang</summary>
 <br>
 
 - Assigned tasks:
-    - Declare coupling level in utils
+    - Declare coupling level in ViewCartController
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+    - Pull Request(s): [Pull request](https://github.com/sonhtx/TKXDPM.KHMT.20231-20/pull/1)
 
 </details>
 
