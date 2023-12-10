@@ -21,7 +21,7 @@ import subsystem.InterbankSubsystem;
  * @author hieud
  *
  */
-// Cohesion level: Functional
+// Cohesion level: Logical, because emptyCart() is called when the place order is done
 public class PaymentController extends BaseController {
 
 	/**
