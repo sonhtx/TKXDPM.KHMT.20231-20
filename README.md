@@ -105,7 +105,7 @@
     - Declare cohesion level in controller
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+    - Pull Request(s): [https://github.com/sonhtx/TKXDPM.KHMT.20231-20/pull/2]()
     - Specific implementation details:
         - Add comments that specify cohesion levels in every classes inside controller: BaseController, HomeController, PaymentController, PlaceOrderController, ViewCartController
 
