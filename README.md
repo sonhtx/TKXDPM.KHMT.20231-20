@@ -107,8 +107,7 @@
 - Implementation details:
     - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
     - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+        - Add comments that specify cohesion levels in every classes inside controller: BaseController, HomeController, PaymentController, PlaceOrderController, ViewCartController
 
 </details>
 
