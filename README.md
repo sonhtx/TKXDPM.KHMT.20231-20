@@ -117,7 +117,7 @@
 <br>
 
 - Assigned tasks:
-    - Declare cohesion level in utils
+    - Declare cohesion level in controller
 
 - Implementation details:
     - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
