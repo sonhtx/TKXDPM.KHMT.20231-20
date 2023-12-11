@@ -51,7 +51,7 @@
 <br>
 
 - Assigned tasks:
-    - Declare coupling level in utils
+    - Declare coupling level in controller
 
 - Implementation details:
     - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
