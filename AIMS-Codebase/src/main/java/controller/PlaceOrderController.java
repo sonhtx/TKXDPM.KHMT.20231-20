@@ -27,6 +27,7 @@ public class PlaceOrderController extends BaseController{
     /**
      * This method checks the avalibility of product when user click PlaceOrder button
      * @throws SQLException
+     * control coupling
      */
     public void placeOrder() throws SQLException{
         Cart.getCart().checkAvailabilityOfProduct();
@@ -36,6 +37,7 @@ public class PlaceOrderController extends BaseController{
      * This method creates the new Order based on the Cart
      * @return Order
      * @throws SQLException
+     * data coupling
      */
     public Order createOrder() throws SQLException{
         Order order = new Order();
@@ -53,6 +55,7 @@ public class PlaceOrderController extends BaseController{
      * This method creates the new Invoice based on order
      * @param order
      * @return Invoice
+     * control coupling
      */
     public Invoice createInvoice(Order order) {
         return new Invoice(order);
@@ -63,6 +66,7 @@ public class PlaceOrderController extends BaseController{
      * @param info
      * @throws InterruptedException
      * @throws IOException
+     * control coupling
      */
     public void processDeliveryInfo(HashMap info) throws InterruptedException, IOException{
         LOGGER.info("Process Delivery Info");
@@ -75,21 +79,25 @@ public class PlaceOrderController extends BaseController{
    * @param info
    * @throws InterruptedException
    * @throws IOException
+   * control coupling
    */
     public void validateDeliveryInfo(HashMap<String, String> info) throws InterruptedException, IOException{
     	
     }
-    
+
+    // control coupling
     public boolean validatePhoneNumber(String phoneNumber) {
     	// TODO: your work
     	return false;
     }
-    
+
+    // control coupling
     public boolean validateName(String name) {
     	// TODO: your work
     	return false;
     }
-    
+
+    // control coupling
     public boolean validateAddress(String address) {
     	// TODO: your work
     	return false;
@@ -100,6 +108,7 @@ public class PlaceOrderController extends BaseController{
      * This method calculates the shipping fees of order
      * @param order
      * @return shippingFee
+     * data coupling
      */
     public int calculateShippingFee(Order order){
         Random rand = new Random();
