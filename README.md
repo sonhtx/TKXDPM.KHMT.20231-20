@@ -51,10 +51,10 @@
 <br>
 
 - Assigned tasks:
-    - Declare coupling level in ViewCartController
+    - Declare coupling level in controller
 
 - Implementation details:
-    - Pull Request(s): [Pull request](https://github.com/sonhtx/TKXDPM.KHMT.20231-20/pull/1)
+    - Pull Request(s): [Pull request](https://github.com/sonhtx/TKXDPM.KHMT.20231-20/pull/3)
 
 </details>
 
