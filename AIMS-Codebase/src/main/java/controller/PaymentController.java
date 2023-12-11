@@ -44,6 +44,7 @@ public class PaymentController extends BaseController {
 	 *         format
 	 * @throws InvalidCardException - if the string does not represent a valid date
 	 *                              in the expected format
+  	 * content coupling
 	 */
 	private String getExpirationDate(String date) throws InvalidCardException {
 		String[] strs = date.split("/");
@@ -81,6 +82,7 @@ public class PaymentController extends BaseController {
 	 * @param securityCode   - the cvv/cvc code of the credit card
 	 * @return {@link Map Map} represent the payment result with a
 	 *         message.
+  	 * data coupling
 	 */
 	public Map<String, String> payOrder(int amount, String contents, String cardNumber, String cardHolderName,
 			String expirationDate, String securityCode) {
@@ -101,6 +103,7 @@ public class PaymentController extends BaseController {
 		return result;
 	}
 
+	// data coupling
 	public void emptyCart(){
         Cart.getCart().emptyCart();
     }
