@@ -17,7 +17,7 @@ public class BaseController {
      * The method checks whether the Media in Cart, if it were in, we will return the CartMedia else return null
      * @param media
      * @return CartMedia or null
-     * Data coupling
+     * control coupling
      */
     public CartMedia checkMediaInCart(Media media){
         return Cart.getCart().checkMediaInCart(media);
