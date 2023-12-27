@@ -119,7 +119,7 @@
     - Declare cohesion level in controller
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+    - Pull Request(s): [https://github.com/sonhtx/TKXDPM.KHMT.20231-20/pull/4]()
     - Specific implementation details:
         - Describe specific in detail what you did last week
         - You can attach images if you want
