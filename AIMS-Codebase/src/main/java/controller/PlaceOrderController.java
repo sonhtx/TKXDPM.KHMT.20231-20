@@ -16,7 +16,8 @@ import entity.order.OrderMedia;
  * This class controls the flow of place order usecase in our AIMS project
  * @author nguyenlm
  */
-// Cohesion level: Functional
+
+// Cohesion level: Functional, everything methods work for the same purpose
 public class PlaceOrderController extends BaseController{
 
     /**
@@ -29,6 +30,7 @@ public class PlaceOrderController extends BaseController{
      * @throws SQLException
      * control coupling
      */
+
     public void placeOrder() throws SQLException{
         Cart.getCart().checkAvailabilityOfProduct();
     }
