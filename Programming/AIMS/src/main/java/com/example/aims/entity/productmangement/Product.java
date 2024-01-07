@@ -1,10 +1,10 @@
 package com.example.aims.entity.productmangement;
 
 public class Product {
-    int id;
-    String title, category;
-    int value, price;
-    int quantity;
+    private int id;
+    private String title, category;
+    private int value, price;
+    private int quantity;
 
     public Product() {}
 

@@ -7,7 +7,7 @@ import javafx.scene.control.Alert;
 
 public class AddProductController {
     public void addProduct(Product product) {
-        if (!checkValid(product)) {
+        if (!isPriceAccept(product)) {
             showAlert("Product price must be from 30% to 150% of product's value");
             ProductId.decCurrentId();
             return;
@@ -16,7 +16,8 @@ public class AddProductController {
         instance.addProduct(product);
     }
 
-    public boolean checkValid(Product product) {
+    public boolean isPriceAccept(Product product) {
+        // Should use constant instead
         double minPriceAccept = 3.0 * product.getValue() / 10.0;
         double maxPriceAccept = 15.0 * product.getValue() / 10.0;
         return minPriceAccept <= product.getPrice() && product.getPrice() <= maxPriceAccept;

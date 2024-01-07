@@ -16,9 +16,9 @@ public class AppTest extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("product-list.fxml"));
         System.out.println(getClass().getResource("product-list.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1200, 900);
+        Scene scene = new Scene(fxmlLoader.load());
 //        ProductListHandler controller = fxmlLoader.getController();
-        stage.setTitle("Hello!");
+        stage.setTitle("AIMS");
         stage.setScene(scene);
         stage.show();
 
