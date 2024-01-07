@@ -9,6 +9,7 @@ public class Book extends Product {
     CoverType coverType;
 
     public Book(String author, String publisher, LocalDate publicationDate, CoverType coverType) {
+        super();
         this.author = author;
         this.publisher = publisher;
         this.publicationDate = publicationDate;

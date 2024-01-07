@@ -1,10 +1,12 @@
 package com.example.aims.entity.productmangement;
 
 public class DVD {
+    DiskType diskType;
     String director;
     String studio;
 
-    public DVD(String director, String studio) {
+    public DVD(DiskType diskType, String director, String studio) {
+        this.diskType = diskType;
         this.director = director;
         this.studio = studio;
     }
@@ -23,5 +25,13 @@ public class DVD {
 
     public void setStudio(String studio) {
         this.studio = studio;
+    }
+
+    public DiskType getDiskType() {
+        return diskType;
+    }
+
+    public void setDiskType(DiskType diskType) {
+        this.diskType = diskType;
     }
 }

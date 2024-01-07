@@ -1,8 +1,21 @@
 package com.example.aims.entity.productmangement;
 
 public class Product {
+    int id;
     String title, category;
     int value, price;
+    int quantity;
+
+    public Product() {}
+
+    public Product(int id, String title, String category, int value, int price, int quantity) {
+        this.id = id;
+        this.title = title;
+        this.category = category;
+        this.value = value;
+        this.price = price;
+        this.quantity = quantity;
+    }
 
     public String getTitle() {
         return title;
@@ -34,5 +47,21 @@ public class Product {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }

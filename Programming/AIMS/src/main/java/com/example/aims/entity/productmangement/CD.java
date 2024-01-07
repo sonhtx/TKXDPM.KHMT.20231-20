@@ -5,6 +5,7 @@ public class CD extends Product {
     String recordLabel;
 
     public CD(String artist, String recordLabel) {
+        super();
         this.artist = artist;
         this.recordLabel = recordLabel;
     }

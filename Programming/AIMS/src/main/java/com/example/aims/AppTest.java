@@ -9,14 +9,15 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class App extends Application {
+public class AppTest extends Application {
     @FXML
     Button btnConfirmPayment;
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("product-list.fxml"));
+        System.out.println(getClass().getResource("product-list.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1200, 900);
-        ProductListHandler controller = fxmlLoader.getController();
+//        ProductListHandler controller = fxmlLoader.getController();
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
@@ -32,7 +33,7 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-        System.out.println("Hello");
+        System.out.println("Starting app...");
         launch();
     }
 }

@@ -11,4 +11,6 @@ module com.example.aims {
 
     opens com.example.aims to javafx.fxml;
     exports com.example.aims;
+    exports com.example.aims.screenhandler;
+    opens com.example.aims.screenhandler to javafx.fxml;
 }

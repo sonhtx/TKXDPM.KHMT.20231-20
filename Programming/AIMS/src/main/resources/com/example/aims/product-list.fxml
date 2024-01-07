@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aims.ProductListHandler">
+    <ScrollPane >
+        <content>
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+
+                <!-- Repeat the following block for Products 1 to 20 -->
+                <!-- Product 1 -->
+                <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                        <!-- Set your image source for Product 1 -->
+                    </ImageView>
+                    <Label text="Product 1" />
+                    <Label text="Category: Category 1" />
+                    <Label text="Value: Value 1" />
+                    <Label text="Price: $100.00" />
+                </VBox>
+
+                <!-- Repeat the above block for Products 2 to 20, adjusting column index accordingly -->
+
+            </GridPane>
+        </content>
+    </ScrollPane>
+    <HBox>
+        <Button text="Add Product" onAction="#onAddProductClick" />
+        <Button text="Delete" onAction="#onDeleteClick" />
+        <Button text="View" onAction="#onViewClick" />
+        <Button text="Update" onAction="#onUpdateClick" />
+    </HBox>
+</VBox>
