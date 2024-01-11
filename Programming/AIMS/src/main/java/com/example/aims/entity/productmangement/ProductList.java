@@ -21,6 +21,10 @@ public class ProductList {
         return instance;
     }
 
+    public List<Product> getProductList() {
+        return productList;
+    }
+
     public void addProduct(Product product) {
         System.out.println("Adding product here");
         productList.add(product);

@@ -14,7 +14,7 @@
 <VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aims.ProductListHandler">
     <ScrollPane>
         <content>
-            <GridPane>
+            <GridPane fx:id="productListGrid">
                 <columnConstraints>
                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
@@ -31,72 +31,72 @@
 
                 <!-- Repeat the following block for Products 1 to 20 -->
                 <!-- Product 1 -->
-                <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">
-                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
-                      <image>
-                         <Image url="@../../../../java/com/example/aims/assets/images/design_pattern.jpg" />
-                      </image>
-                    </ImageView>
-                    <Label text="Title: Design Pattern" />
-                    <Label text="Category: Book" />
-                    <Label text="Value: 200000 VND" />
-                    <Label text="Price: 190000 VND" />
-                </VBox>
-                <VBox GridPane.columnIndex="1" GridPane.rowIndex="0">
-                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="@../../../../java/com/example/aims/assets/images/clean_code.jpg" />
-                        </image>
-                    </ImageView>
-                    <Label text="Title: Clean Code" />
-                    <Label text="Category: Book" />
-                    <Label text="Value: 200000 VND" />
-                    <Label text="Price: 180000 VND" />
-                </VBox>
-                <VBox GridPane.columnIndex="2" GridPane.rowIndex="0">
-                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="@../../../../java/com/example/aims/assets/images/code_complete.jpg" />
-                        </image>
-                    </ImageView>
-                    <Label text="Title: Code Complete" />
-                    <Label text="Category: Book" />
-                    <Label text="Value: 180000 VND" />
-                    <Label text="Price: 180000 VND" />
-                </VBox>
-                <VBox GridPane.columnIndex="3" GridPane.rowIndex="0">
-                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="@../../../../java/com/example/aims/assets/images/study_in_red.jpg" />
-                        </image>
-                    </ImageView>
-                    <Label text="Title: Study in red" />
-                    <Label text="Category: Book" />
-                    <Label text="Value: 150000 VND" />
-                    <Label text="Price: 130000 VND" />
-                </VBox>
-                <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
-                    <ImageView fitHeight="163.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="@../../../../java/com/example/aims/assets/images/divide.jpg" />
-                        </image>
-                    </ImageView>
-                    <Label text="Title: Divide" />
-                    <Label text="Category: CD" />
-                    <Label text="Value: 2000000 VND" />
-                    <Label text="Price: 1900000 VND" />
-                </VBox>
-                <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
-                    <ImageView fitHeight="150.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="@../../../../java/com/example/aims/assets/images/X_cover.jpg" />
-                        </image>
-                    </ImageView>
-                    <Label text="Title: X" />
-                    <Label text="Category: CD" />
-                    <Label text="Value: 200000 0VND" />
-                    <Label text="Price: 2000000 VND" />
-                </VBox>
+<!--                <VBox GridPane.columnIndex="0" GridPane.rowIndex="0">-->
+<!--                    <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                      <image>-->
+<!--                         <Image url="@design_pattern.jpg" />-->
+<!--                      </image>-->
+<!--                    </ImageView>-->
+<!--                    <Label text="Title: Design Pattern" />-->
+<!--                    <Label text="Category: Book" />-->
+<!--                    <Label text="Value: 200000 VND" />-->
+<!--                    <Label text="Price: 190000 VND" />-->
+<!--                </VBox>-->
+<!--                <VBox GridPane.columnIndex="1" GridPane.rowIndex="0">-->
+<!--                    <ImageView fx:id="imageView1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                        <image>-->
+<!--                            <Image url="@../../../../java/com/example/aims/assets/images/clean_code.jpg" />-->
+<!--                        </image>-->
+<!--                    </ImageView>-->
+<!--                    <Label text="Title: Clean Code" />-->
+<!--                    <Label text="Category: Book" />-->
+<!--                    <Label text="Value: 200000 VND" />-->
+<!--                    <Label text="Price: 180000 VND" />-->
+<!--                </VBox>-->
+<!--                <VBox GridPane.columnIndex="2" GridPane.rowIndex="0">-->
+<!--                    <ImageView fx:id="imageView2" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                        <image>-->
+<!--                            <Image url="@../../../../java/com/example/aims/assets/images/code_complete.jpg" />-->
+<!--                        </image>-->
+<!--                    </ImageView>-->
+<!--                    <Label text="Title: Code Complete" />-->
+<!--                    <Label text="Category: Book" />-->
+<!--                    <Label text="Value: 180000 VND" />-->
+<!--                    <Label text="Price: 180000 VND" />-->
+<!--                </VBox>-->
+<!--                <VBox GridPane.columnIndex="3" GridPane.rowIndex="0">-->
+<!--                    <ImageView fx:id="imageView3" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                        <image>-->
+<!--                            <Image url="@../../../../java/com/example/aims/assets/images/study_in_red.jpg" />-->
+<!--                        </image>-->
+<!--                    </ImageView>-->
+<!--                    <Label text="Title: Study in red" />-->
+<!--                    <Label text="Category: Book" />-->
+<!--                    <Label text="Value: 150000 VND" />-->
+<!--                    <Label text="Price: 130000 VND" />-->
+<!--                </VBox>-->
+<!--                <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">-->
+<!--                    <ImageView fx:id="imageView4" fitHeight="163.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                        <image>-->
+<!--                            <Image url="@../../../../java/com/example/aims/assets/images/divide.jpg" />-->
+<!--                        </image>-->
+<!--                    </ImageView>-->
+<!--                    <Label text="Title: Divide" />-->
+<!--                    <Label text="Category: CD" />-->
+<!--                    <Label text="Value: 2000000 VND" />-->
+<!--                    <Label text="Price: 1900000 VND" />-->
+<!--                </VBox>-->
+<!--                <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">-->
+<!--                    <ImageView fx:id="imageView5" fitHeight="150.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                        <image>-->
+<!--                            <Image url="@../../../../java/com/example/aims/assets/images/X_cover.jpg" />-->
+<!--                        </image>-->
+<!--                    </ImageView>-->
+<!--                    <Label text="Title: X" />-->
+<!--                    <Label text="Category: CD" />-->
+<!--                    <Label text="Value: 200000 0VND" />-->
+<!--                    <Label text="Price: 2000000 VND" />-->
+<!--                </VBox>-->
 
                 <!-- Repeat the above block for Products 2 to 20, adjusting column index accordingly -->
 
@@ -108,5 +108,6 @@
         <Button onAction="#onDeleteClick" text="Delete" />
         <Button onAction="#onViewClick" text="View" />
         <Button onAction="#onUpdateClick" text="Update" />
+      <Button fx:id="refreshBtn" onAction="#onRefreshClick" text="Refresh" />
     </HBox>
 </VBox>

@@ -1,11 +1,17 @@
 package com.example.aims.screenhandler;
 
+import com.example.aims.ProductListHandler;
 import com.example.aims.controller.AddProductController;
-import com.example.aims.entity.productmangement.Product;
-import com.example.aims.entity.productmangement.ProductId;
+import com.example.aims.entity.productmangement.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
+import java.io.File;
+
 
 public class AddProductHandler {
 
@@ -43,6 +49,12 @@ public class AddProductHandler {
     private TextField quantityField;
 
     @FXML
+    private Button chooseImage;
+
+    @FXML
+    private TextField imageUrlTf;
+
+    @FXML
     private void onAddProductClick() {
         System.out.println("Clicked");
         String title = titleTextField.getText();
@@ -50,14 +62,55 @@ public class AddProductHandler {
         int value = Integer.parseInt(valueTextField.getText());
         int price = Integer.parseInt(priceTextField.getText());
         int quantity = Integer.parseInt(quantityField.getText());
+        String imageUrl = imageUrlTf.getText();
 
         ProductId.incCurrentId();
         int id = ProductId.getCurrentId();
-        Product product = new Product(id, title, category, value, price, quantity);
+        Product product = new Product();
+        switch (category) {
+            case "Book":
+                String author = invisibleField1.getText();
+                String publisher = invisibleField2.getText();
+                product = new Book(id, title, ProductCategory.Book, value, price, quantity, imageUrl, author, publisher);
+                break;
+            case "CD":
+                String artist = invisibleField1.getText();
+                String recordLabel = invisibleLabel2.getText();
+                product = new CD(id, title, ProductCategory.CD, value, price, quantity, imageUrl, artist, recordLabel);
+                break;
+            case "LP":
+                artist = invisibleField1.getText();
+                recordLabel = invisibleLabel2.getText();
+                product = new LP(id, title, ProductCategory.LP, value, price, quantity, imageUrl, artist, recordLabel);
+                break;
+            case "DVD":
+                String director = invisibleField1.getText();
+                String studio = invisibleLabel2.getText();
+                product = new DVD(id, title, ProductCategory.DVD, value, price, quantity, imageUrl, director, studio);
+                break;
+        }
         AddProductController addProductController = new AddProductController();
         addProductController.addProduct(product);
 
-        showAlert("Product Added", "Product information:\nTitle: " + title + "\nCategory: " + category + "\nValue: " + value + "\nPrice: " + price);
+        if (addProductController.isPriceAccept(product)) {
+            showAlert("Product Added", "Product information:\nTitle: " + title + "\nCategory: " + category + "\nValue: " + value + "\nPrice: " + price);
+        }
+        else {
+            showAlert("Product Add Failed", "Your new product doesn't meet requirement.");
+        }
+    }
+
+    @FXML
+    private void onChooseImage() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Choose your image");
+        File selectedFile = fileChooser.showOpenDialog(new Stage());
+
+        if (selectedFile != null) {
+            String imageUrl = selectedFile.toURI().toString();
+            System.out.println(imageUrl);
+            imageUrlTf.setText(imageUrl);
+        }
     }
 
     @FXML

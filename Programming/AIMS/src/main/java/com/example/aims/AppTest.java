@@ -22,9 +22,6 @@ public class AppTest extends Application {
         stage.setScene(scene);
         stage.show();
 
-//        PayOrderScreenHandler payOrderScreen = new PayOrderScreenHandler("pay-order.fxml", stage);
-//        payOrderScreen.show();
-
     }
 
     @FXML

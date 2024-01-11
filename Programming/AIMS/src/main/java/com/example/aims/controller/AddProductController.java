@@ -12,8 +12,8 @@ public class AddProductController {
             ProductId.decCurrentId();
             return;
         }
-        ProductList instance = ProductList.getInstance();
-        instance.addProduct(product);
+        ProductList productList = ProductList.getInstance();
+        productList.addProduct(product);
     }
 
     public boolean isPriceAccept(Product product) {

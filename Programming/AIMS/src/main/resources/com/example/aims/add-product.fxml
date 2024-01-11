@@ -10,17 +10,17 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="258.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aims.screenhandler.AddProductHandler">
+<VBox prefHeight="297.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aims.screenhandler.AddProductHandler">
     <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Add Product" />
 
     <HBox spacing="10">
         <Label prefHeight="24.0" prefWidth="87.0" text="Title:" />
-        <TextField fx:id="titleTextField" prefHeight="25.0" prefWidth="217.0" />
+        <TextField fx:id="titleTextField" prefHeight="25.0" prefWidth="269.0" />
     </HBox>
    <HBox prefHeight="0.0" prefWidth="241.0">
       <children>
          <Label prefHeight="23.0" prefWidth="97.0" text="Category:" />
-          <ComboBox fx:id="categoryComboBox" onAction="#handleCategoryChoosing" prefHeight="25.0" prefWidth="217.0" promptText="Select category">
+          <ComboBox fx:id="categoryComboBox" onAction="#handleCategoryChoosing" prefHeight="25.0" prefWidth="270.0" promptText="Select category">
               <items>
                   <FXCollections fx:factory="observableArrayList">
                       <String fx:value="Book" />
@@ -37,17 +37,24 @@
 
     <HBox spacing="10">
         <Label prefHeight="23.0" prefWidth="87.0" text="Value (VND):" />
-        <TextField fx:id="valueTextField" prefHeight="25.0" prefWidth="218.0" />
+        <TextField fx:id="valueTextField" prefHeight="25.0" prefWidth="271.0" />
     </HBox>
 
     <HBox spacing="10">
         <Label prefHeight="22.0" prefWidth="87.0" text="Price (VND):" />
-        <TextField fx:id="priceTextField" prefHeight="25.0" prefWidth="218.0" />
+        <TextField fx:id="priceTextField" prefHeight="25.0" prefWidth="272.0" />
     </HBox>
    <HBox layoutX="10.0" layoutY="116.0" spacing="10">
       <children>
          <Label prefHeight="22.0" prefWidth="87.0" text="Quantity:" />
-         <TextField fx:id="quantityField" prefHeight="25.0" prefWidth="218.0" />
+         <TextField fx:id="quantityField" prefHeight="25.0" prefWidth="272.0" />
+      </children>
+   </HBox>
+   <HBox spacing="10">
+      <children>
+         <Label prefHeight="22.0" prefWidth="87.0" text="ImageCover:" />
+         <TextField fx:id="imageUrlTf" prefHeight="25.0" prefWidth="174.0" />
+         <Button fx:id="chooseImage" mnemonicParsing="false" onAction="#onChooseImage" prefHeight="25.0" prefWidth="89.0" text="Choose" />
       </children>
    </HBox>
    <HBox fx:id="invisibleHBox1" layoutX="10.0" layoutY="116.0" spacing="10" visible="false">
@@ -62,10 +69,10 @@
          <TextField fx:id="invisibleField2" prefHeight="25.0" prefWidth="218.0" />
       </children>
    </HBox>
-   <AnchorPane prefHeight="200.0" prefWidth="200.0">
+   <AnchorPane prefHeight="109.0" prefWidth="343.0">
       <children>
       
-          <Button layoutX="33.0" layoutY="55.0" onAction="#onAddProductClick" prefHeight="25.0" prefWidth="260.0" text="Add Product" />
+                <Button layoutX="73.0" layoutY="14.0" onAction="#onAddProductClick" prefHeight="25.0" prefWidth="260.0" text="Add Product" />
       </children>
    </AnchorPane>
 </VBox>
