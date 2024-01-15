@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-15T09:43:32.834Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="5X13Uqc1XbtCEFuu99v2" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-15T09:45:10.110Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="mNFutCyr-90U3NP1S7ow" version="22.1.18" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1562" dy="891" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -149,7 +149,7 @@
         <mxCell id="zZhm9E_2jFgNcmyxIRVF-46" value="author" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="410" y="40" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zZhm9E_2jFgNcmyxIRVF-47" value="value" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="zZhm9E_2jFgNcmyxIRVF-47" value="recordLabel" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="750" y="360" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="zZhm9E_2jFgNcmyxIRVF-48" value="artist" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -161,11 +161,59 @@
         <mxCell id="zZhm9E_2jFgNcmyxIRVF-50" value="artist" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="170" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zZhm9E_2jFgNcmyxIRVF-51" value="value" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="zZhm9E_2jFgNcmyxIRVF-51" value="director" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="570" y="520" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zZhm9E_2jFgNcmyxIRVF-52" value="value" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="zZhm9E_2jFgNcmyxIRVF-52" value="studio" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="670" y="520" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZhm9E_2jFgNcmyxIRVF-53" value="" style="endArrow=none;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="zZhm9E_2jFgNcmyxIRVF-5" target="zZhm9E_2jFgNcmyxIRVF-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="360" as="sourcePoint" />
+            <mxPoint x="500" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZhm9E_2jFgNcmyxIRVF-54" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="zZhm9E_2jFgNcmyxIRVF-5" target="zZhm9E_2jFgNcmyxIRVF-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="360" as="sourcePoint" />
+            <mxPoint x="500" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZhm9E_2jFgNcmyxIRVF-55" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="zZhm9E_2jFgNcmyxIRVF-4" target="zZhm9E_2jFgNcmyxIRVF-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="360" as="sourcePoint" />
+            <mxPoint x="500" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZhm9E_2jFgNcmyxIRVF-56" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="zZhm9E_2jFgNcmyxIRVF-4" target="zZhm9E_2jFgNcmyxIRVF-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="360" as="sourcePoint" />
+            <mxPoint x="500" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZhm9E_2jFgNcmyxIRVF-57" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zZhm9E_2jFgNcmyxIRVF-3" target="zZhm9E_2jFgNcmyxIRVF-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="360" as="sourcePoint" />
+            <mxPoint x="500" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZhm9E_2jFgNcmyxIRVF-58" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zZhm9E_2jFgNcmyxIRVF-3" target="zZhm9E_2jFgNcmyxIRVF-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="360" as="sourcePoint" />
+            <mxPoint x="500" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZhm9E_2jFgNcmyxIRVF-59" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="zZhm9E_2jFgNcmyxIRVF-51" target="zZhm9E_2jFgNcmyxIRVF-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="360" as="sourcePoint" />
+            <mxPoint x="500" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZhm9E_2jFgNcmyxIRVF-60" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.59;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="zZhm9E_2jFgNcmyxIRVF-52" target="zZhm9E_2jFgNcmyxIRVF-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="360" as="sourcePoint" />
+            <mxPoint x="500" y="360" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
