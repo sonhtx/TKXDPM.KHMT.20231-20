@@ -11,6 +11,7 @@
 Do mỗi người làm một use case riêng và mọi người trong nhóm có lịch trình cũng như kế hoạch và mục tiêu riêng cho mình, nên sau khi chia use case thì mỗi người trong nhóm tự làm phần riêng và triển khai cài đặt 
 riêng của mình cho từng use case. Vì vậy bọn em chưa merge được các phần thành chương trình hoàn chỉnh, tuy vậy code của từng use case đã được update và có demo ở những nhánh sau:
 - Use case Product Management: Branch develop/sonhtx
+- Use case User Management: Branch thangnd-user
 
 
 # Weekly Report
