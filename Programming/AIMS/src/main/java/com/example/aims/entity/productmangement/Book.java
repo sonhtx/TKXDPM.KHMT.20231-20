@@ -5,15 +5,17 @@ import java.time.LocalDate;
 public class Book extends Product {
     String author;
     String publisher;
-    LocalDate publicationDate;
-    CoverType coverType;
 
-    public Book(String author, String publisher, LocalDate publicationDate, CoverType coverType) {
+    public Book(String author, String publisher) {
         super();
         this.author = author;
         this.publisher = publisher;
-        this.publicationDate = publicationDate;
-        this.coverType = coverType;
+    }
+
+    public Book(int id, String title, ProductCategory productCategory, int value, int price, int quantity, String imageUrl, String author, String publisher) {
+        super(id, title, productCategory, value, price, quantity, imageUrl);
+        this.author = author;
+        this.publisher = publisher;
     }
 
     public String getAuthor() {
@@ -30,21 +32,5 @@ public class Book extends Product {
 
     public void setPublisher(String publisher) {
         this.publisher = publisher;
-    }
-
-    public LocalDate getPublicationDate() {
-        return publicationDate;
-    }
-
-    public void setPublicationDate(LocalDate publicationDate) {
-        this.publicationDate = publicationDate;
-    }
-
-    public CoverType getCoverType() {
-        return coverType;
-    }
-
-    public void setCoverType(CoverType coverType) {
-        this.coverType = coverType;
     }
 }

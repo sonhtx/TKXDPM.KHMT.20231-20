@@ -1,0 +1,45 @@
+CREATE TABLE "Product"(
+ "id" INTEGER PRIMARY KEY NOT NULL,
+ "category" VARCHAR(45) NOT NULL,
+ "price" INTEGER NOT NULL,
+ "quantity" INTEGER NOT NULL,
+ "title" VARCHAR(45) NOT NULL,
+ "value" INTEGER NOT NULL,
+ "imageUrl" VARCHAR(45) NOT NULL
+)
+
+CREATE TABLE "Book"(
+ "id" INTEGER PRIMARY KEY NOT NULL,
+ "author" VARCHAR(45) NOT NULL,
+ "publisher" VARCHAR(45) NOT NULL,
+ CONSTRAINT "fk_Book"
+ FOREIGN KEY("id")
+ REFERENCES "Product"("id")
+);
+
+CREATE TABLE "CD"(
+ "id" INTEGER PRIMARY KEY NOT NULL,
+ "artist" VARCHAR(45) NOT NULL,
+ "recordLabel" VARCHAR(45) NOT NULL,
+ CONSTRAINT "fk_CD"
+ FOREIGN KEY("id")
+ REFERENCES "Product"("id")
+);
+
+CREATE TABLE "LP"(
+ "id" INTEGER PRIMARY KEY NOT NULL,
+ "artist" VARCHAR(45) NOT NULL,
+ "recordLabel" VARCHAR(45) NOT NULL,
+ CONSTRAINT "fk_LP"
+ FOREIGN KEY("id")
+ REFERENCES "Product"("id")
+);
+
+CREATE TABLE "DVD"(
+ "id" INTEGER PRIMARY KEY NOT NULL,
+ "director" VARCHAR(45) NOT NULL,
+ "studio" VARCHAR(45) NOT NULL,
+ CONSTRAINT "fk_DVD"
+ FOREIGN KEY("id")
+ REFERENCES "Product"("id")
+)

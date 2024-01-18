@@ -1,5 +1,6 @@
 package com.example.aims.controller;
 
+import com.example.aims.database.DBConnection;
 import com.example.aims.entity.productmangement.Product;
 import com.example.aims.entity.productmangement.ProductId;
 import com.example.aims.entity.productmangement.ProductList;
@@ -12,8 +13,9 @@ public class AddProductController {
             ProductId.decCurrentId();
             return;
         }
-        ProductList instance = ProductList.getInstance();
-        instance.addProduct(product);
+        ProductList productList = ProductList.getInstance();
+        productList.addProduct(product);
+        DBConnection.addProduct(product);
     }
 
     public boolean isPriceAccept(Product product) {

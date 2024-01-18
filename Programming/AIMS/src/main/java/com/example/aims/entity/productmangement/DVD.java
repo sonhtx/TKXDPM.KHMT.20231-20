@@ -1,12 +1,17 @@
 package com.example.aims.entity.productmangement;
 
-public class DVD {
-    DiskType diskType;
+public class DVD extends Product {
     String director;
     String studio;
 
-    public DVD(DiskType diskType, String director, String studio) {
-        this.diskType = diskType;
+    public DVD(String director, String studio) {
+        super();
+        this.director = director;
+        this.studio = studio;
+    }
+
+    public DVD(int id, String title, ProductCategory productCategory, int value, int price, int quantity, String imageUrl, String director, String studio) {
+        super(id, title, productCategory, value, price, quantity, imageUrl);
         this.director = director;
         this.studio = studio;
     }
@@ -25,13 +30,5 @@ public class DVD {
 
     public void setStudio(String studio) {
         this.studio = studio;
-    }
-
-    public DiskType getDiskType() {
-        return diskType;
-    }
-
-    public void setDiskType(DiskType diskType) {
-        this.diskType = diskType;
     }
 }
