@@ -8,6 +8,7 @@ module com.example.aims {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     opens com.example.aims to javafx.fxml;
     exports com.example.aims;
