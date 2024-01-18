@@ -4,7 +4,7 @@ public class ProductId {
     private static ProductId instance;
     private static int currentId;
     private ProductId() {
-        currentId = 0;
+        currentId = 10;
     }
 
     public static ProductId getInstance() {
